@@ -197,6 +197,10 @@ class MindARController {
     }
 
     onArClick(ev) {
+        // NUEVO: ignora toques mientras hay un modal abierto o sobre el modal
+        if (document.body.classList.contains('modal-open')) return;
+        if (ev.target?.closest?.('.modal')) return;
+
         const mindar = this.mindar;
         if (!mindar) return;
 
