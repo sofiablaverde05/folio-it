@@ -44,63 +44,157 @@
 		</div>
 	</div>
 
+		<!-- Botones AR (inferior). Se muestran solo mientras la imagen está detectada -->
+	<div id="ar-buttons">
+		<button type="button" data-modal="modalBox1">Sinopsis</button>
+		<button type="button" data-modal="modalBox2">Palabras clave</button>
+		<button type="button" data-modal="modalBox3">Mood</button>
+	</div>
+
 	<!-- ===== MODALES ===== -->
 
 	<!-- Cubo 1: Sinopsis -->
-	<div class="modal fade" id="modalBox1" tabindex="-1" aria-labelledby="modalBox1Label" aria-hidden="true">
+		<!-- Sinopsis -->
+	<div class="modal modal-ar fade" id="modalBox1" tabindex="-1" aria-labelledby="modalBox1Label" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="modalBox1Label">Sinopsis</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				<div class="ar-head">
+					<div>
+						<p class="ar-eyebrow">Sinopsis</p>
+						<h1 class="ar-title" id="modalBox3Label">Oscuro y nostálgico</h1>
+					</div>
+					<button type="button" class="ar-close" data-bs-dismiss="modal" aria-label="Cerrar">×</button>
 				</div>
-				<div class="modal-body">
-					En Derry, un pequeño pueblo de Maine, una fuerza maligna despierta cada 27 años para alimentarse del miedo. Cuando una serie de desapariciones comienza a aterrorizar a sus habitantes, siete niños deberán enfrentarse a una presencia capaz de adoptar la forma de sus peores pesadillas. Su nombre es Pennywise, y el verdadero horror apenas comienza.
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+				<div class="ar-hero">cada 27 años, el miedo despierta</div>
+
+				<div class="ar-text">
+					<p>En Derry, un pequeño pueblo de Maine, una fuerza maligna despierta cada 27 años para alimentarse del miedo. Cuando una serie de desapariciones comienza a aterrorizar a sus habitantes, siete niños deberán enfrentarse a una presencia capaz de adoptar la forma de sus peores pesadillas. Su nombre es Pennywise, y el verdadero horror apenas comienza.</p>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Cubo 2: Palabras clave -->
-	<div class="modal fade" id="modalBox2" tabindex="-1" aria-labelledby="modalBox2Label" aria-hidden="true">
+	<!-- Mood 
+	<div class="modal modal-ar fade" id="modalBox3" tabindex="-1" aria-labelledby="modalBox3Label" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="modalBox2Label">Palabras clave</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				<div class="ar-head">
+					<div>
+						<p class="ar-eyebrow">Mood del libro</p>
+						<h1 class="ar-title" id="modalBox3Label">Oscuro y nostálgico</h1>
+					</div>
+					<button type="button" class="ar-close" data-bs-dismiss="modal" aria-label="Cerrar">×</button>
 				</div>
-				<div class="modal-body">
-					Miedo · Infancia · Amistad · Trauma · Valentía · Misterio · Memoria · Maldad · Pérdida · Monstruos
 
-En Derry, los miedos toman forma, los recuerdos esconden secretos y la amistad se convierte en la única fuerza capaz de enfrentar aquello que parece invencible.
+				<div class="ar-hero">cada 27 años, el miedo despierta</div>
+
+				<div class="ar-text">
+					<p>Si te gustó Stranger Things, por su grupo de amigos enfrentándose a misterios sobrenaturales, o El teléfono negro, por su atmósfera oscura y aterradora, IT, de Stephen King, podría ser tu próxima lectura.</p>
+					<p>Si disfrutaste de Carrie, del mismo autor, encontrarás ese estilo de terror que explora los miedos humanos. Y si te gustan las historias de amistad y aventuras como Los Goonies, conectarás con el vínculo entre los protagonistas.</p>
+					<p>Si te gustan el terror, los misterios y las amistades que desafían lo imposible, atrévete a descubrir Derry. ¡Todos flotan!</p>
 				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+
+				<div class="ar-meters">
+					<div class="ar-meter"><span>Intensidad</span><span class="ar-meter-track"><span class="ar-meter-fill" style="--v:90%"></span></span></div>
+					<div class="ar-meter"><span>Oscuridad</span><span class="ar-meter-track"><span class="ar-meter-fill" style="--v:80%; --c:#2c4a66"></span></span></div>
+					<div class="ar-meter"><span>Ritmo</span><span class="ar-meter-track"><span class="ar-meter-fill" style="--v:60%; --c:#9cc5cf"></span></span></div>
+				</div>
+
+				
+			</div>
+		</div>
+	</div> -->
+
+		<!-- Palabras clave -->
+	<div class="modal modal-ar fade" id="modalBox2" tabindex="-1" aria-labelledby="modalBox2Label" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="ar-head">
+					<div>
+						<p class="ar-eyebrow">Palabras clave</p>
+						<h1 class="ar-title" id="modalBox2Label">Sin spoilers</h1>
+					</div>
+					<button type="button" class="ar-close" data-bs-dismiss="modal" aria-label="Cerrar">×</button>
+				</div>
+
+				<p class="ar-lead">Tres palabras que describen la experiencia de lectura. Ninguna revela la trama.</p>
+
+				<div class="ar-cards">
+					<div class="ar-card">
+						<svg class="ar-star" viewBox="0 0 32 32" fill="#f2733f" aria-hidden="true"><polygon points="16,1 18.5,10 26.6,5.4 22,13.5 31,16 22,18.5 26.6,26.6 18.5,22 16,31 13.5,22 5.4,26.6 10,18.5 1,16 10,13.5 5.4,5.4 13.5,10"/></svg>
+						<div>
+							<h2>Miedo</h2>
+							<p>En Derry, los miedos toman forma y se vuelven imposibles de ignorar.</p>
+						</div>
+					</div>
+
+					<div class="ar-card">
+						<svg class="ar-star" viewBox="0 0 32 32" fill="#2c4a66" aria-hidden="true"><polygon points="16,1 18.5,10 26.6,5.4 22,13.5 31,16 22,18.5 26.6,26.6 18.5,22 16,31 13.5,22 5.4,26.6 10,18.5 1,16 10,13.5 5.4,5.4 13.5,10"/></svg>
+						<div>
+							<h2>Amistad</h2>
+							<p>El vínculo entre los protagonistas es la única fuerza capaz de enfrentar aquello que parece invencible.</p>
+						</div>
+					</div>
+
+					<div class="ar-card">
+						<svg class="ar-star" viewBox="0 0 32 32" fill="#9cc5cf" aria-hidden="true"><polygon points="16,1 18.5,10 26.6,5.4 22,13.5 31,16 22,18.5 26.6,26.6 18.5,22 16,31 13.5,22 5.4,26.6 10,18.5 1,16 10,13.5 5.4,5.4 13.5,10"/></svg>
+						<div>
+							<h2>Memoria</h2>
+							<p>Los recuerdos esconden secretos que vuelven cuando menos los esperas.</p>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 
-	<!-- Cubo 3: Mood -->
-	<div class="modal fade" id="modalBox3" tabindex="-1" aria-labelledby="modalBox3Label" aria-hidden="true">
+		<!-- Mood / Afinidad -->
+	<div class="modal modal-ar fade" id="modalBox3" tabindex="-1" aria-labelledby="modalBox3Label" aria-hidden="true">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">
-				<div class="modal-header">
-					<h1 class="modal-title fs-5" id="modalBox3Label">Mood</h1>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+				<div class="ar-head">
+					<div>
+						<p class="ar-eyebrow">Afinidad</p>
+						<h1 class="ar-title" id="modalBox3Label">Combina contigo</h1>
+					</div>
+					<button type="button" class="ar-close" data-bs-dismiss="modal" aria-label="Cerrar">×</button>
 				</div>
-				<div class="modal-body">
-					Si te gustó Stranger Things, por su grupo de amigos enfrentándose a misterios sobrenaturales, o El teléfono negro, por su atmósfera oscura y aterradora, IT, de Stephen King, podría ser tu próxima lectura.
 
-Si disfrutaste de Carrie, del mismo autor, encontrarás ese estilo de terror que explora los miedos humanos. Y si te gustan las historias de amistad y aventuras como Los Goonies, conectarás con el vínculo entre los protagonistas.
+				<div class="ar-affinity">
 
-Si te gustan el terror, los misterios y las amistades que desafían lo imposible, atrévete a descubrir Derry. ¡Todos flotan!
-				</div>
-				<div class="modal-footer">
-					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+					<div class="ar-aff-item">
+						<div class="ar-aff-body">
+							<div class="ar-aff-top"><h2 class="ar-aff-name">El instituto</h2><span class="ar-aff-pct">91%</span></div>
+							<p class="ar-aff-why">Coincide en: niños en peligro, habilidades extraordinarias y secretos oscuros que deben descubrir.</p>
+							<span class="ar-aff-bar"><span class="ar-aff-bar-fill" style="--v:91%"></span></span>
+						</div>
+					</div>
+
+					<div class="ar-aff-item">
+						<div class="ar-aff-body">
+							<div class="ar-aff-top"><h2 class="ar-aff-name">Stranger Things</h2><span class="ar-aff-pct">91%</span></div>
+							<p class="ar-aff-why">Coincide en: amistad, misterios sobrenaturales y pequeños pueblos.</p>
+							<span class="ar-aff-bar"><span class="ar-aff-bar-fill" style="--v:91%"></span></span>
+						</div>
+					</div>
+
+					<div class="ar-aff-item">
+						<div class="ar-aff-body">
+							<div class="ar-aff-top"><h2 class="ar-aff-name">El misterio de Salem's Lot</h2><span class="ar-aff-pct">86%</span></div>
+							<p class="ar-aff-why">Coincide en: un pueblo aparentemente tranquilo, sucesos inexplicables y una amenaza sobrenatural que se extiende entre sus habitantes.</p>
+							<span class="ar-aff-bar"><span class="ar-aff-bar-fill" style="--v:86%"></span></span>
+						</div>
+					</div>
+
+					<div class="ar-aff-item">
+						<div class="ar-aff-body">
+							<div class="ar-aff-top"><h2 class="ar-aff-name">Carrie</h2><span class="ar-aff-pct">78%</span></div>
+							<p class="ar-aff-why">Coincide en: terror psicológico, poderes sobrenaturales y personajes que enfrentan sus mayores miedos.</p>
+							<span class="ar-aff-bar"><span class="ar-aff-bar-fill" style="--v:78%"></span></span>
+						</div>
+					</div>
+
 				</div>
 			</div>
 		</div>
@@ -121,6 +215,73 @@ Si te gustan el terror, los misterios y las amistades que desafían lo imposible
 		window.showModal3 = function () {
 			bootstrap.Modal.getOrCreateInstance(document.getElementById('modalBox3')).show();
 		};
+	</script>
+
+	<!-- Lógica de la barra de botones -->
+	<script>
+		(function () {
+			const bar = document.getElementById('ar-buttons');
+			let hideTimer = null;
+
+			function anyModalOpen() {
+				return !!document.querySelector('.modal.show');
+			}
+
+			function show() {
+				clearTimeout(hideTimer);
+				bar.classList.add('visible');
+			}
+
+			// Pequeño retardo al perder el target para evitar parpadeos;
+			// no se oculta mientras haya un modal abierto.
+			function hide() {
+				clearTimeout(hideTimer);
+				hideTimer = setTimeout(function () {
+					if (!anyModalOpen()) bar.classList.remove('visible');
+				}, 600);
+			}
+
+			bar.querySelectorAll('button[data-modal]').forEach(function (btn) {
+				btn.addEventListener('click', function () {
+					bootstrap.Modal.getOrCreateInstance(document.getElementById(btn.dataset.modal)).show();
+				});
+			});
+
+			// Al cerrar un modal, si el target ya se perdió, se oculta la barra.
+			document.querySelectorAll('.modal').forEach(function (m) {
+				m.addEventListener('hidden.bs.modal', function () {
+					if (!window.arTargetVisible) hide();
+				});
+			});
+
+			window.arTargetVisible = false;
+			window.arButtons = {
+				show: show,
+				hide: hide,
+				// Engancha onFound/onLost de cada ImageTarget sin tocar app.json
+				hook: function (player) {
+					(player.imageTargets || []).forEach(function (t) {
+						if (t.__barHooked) return;
+						t.__barHooked = true;
+						const prevFound = t.onFound;
+						const prevLost = t.onLost;
+						t.onFound = function () {
+							window.arTargetVisible = true;
+							show();
+							if (prevFound) return prevFound.apply(this, arguments);
+						};
+						t.onLost = function () {
+							window.arTargetVisible = false;
+							hide();
+							if (prevLost) return prevLost.apply(this, arguments);
+						};
+					});
+				}
+			};
+
+			// ?debug=1 muestra la barra siempre (útil para probar el diseño sin escanear)
+			if (new URLSearchParams(location.search).get('debug') === '1') show();
+		})();
 	</script>
 
 	<!-- ===== Script de AR (sin cambios) ===== -->
@@ -189,6 +350,9 @@ Si te gustan el terror, los misterios y las amistades que desafían lo imposible
 				});
 
 				window.player = player;
+
+				// Conecta los botones inferiores a la detección del target
+					window.arButtons.hook(player);
 
 				setProgress(85, 'Preparando AR...');
 				log.textContent = 'initializing...';
