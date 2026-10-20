@@ -42,7 +42,7 @@ canvas {
     --folio-blue: #9dc6cc;
     --folio-orange: #f27444;
     --folio-cream: #f3e5ca;
-    --folio-title: 'Pangolin', 'Itim', cursive;
+    --folio-title: 'Pangolin', 'Itim';
     --folio-body: 'Degular', 'Hanken Grotesk', system-ui, sans-serif;
 }
 
@@ -102,7 +102,7 @@ canvas {
     padding: 14px 36px;
     border: 0;
     border-radius: 999px;
-    font-family: var(--folio-title);
+    font-family: 'Hanken Grotesk', system-ui, sans-serif;
     font-size: 30px;
     color: #2b4d68;
     background: var(--folio-cream);
